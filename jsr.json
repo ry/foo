@@ -1,0 +1,5 @@
+{
+  "name": "@ry/foo",
+  "version": "0.0.2",
+  "exports": "./index.mjs"
+}
