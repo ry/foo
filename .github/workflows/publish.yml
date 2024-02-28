@@ -18,5 +18,7 @@ jobs:
       - name: Publish package
         run: |-
           curl -fsSL https://deno.land/install.sh | sh
+          export DENO_INSTALL="/home/runner/.deno"
+          export PATH="$DENO_INSTALL/bin:$PATH"
           deno upgrade --canary
           npx jsr publish --provenance
